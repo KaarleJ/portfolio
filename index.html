@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/kaarlej.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KaarleJ</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <canvas id="bg"></canvas>
+
+    <main>
+      <audio id="audio" src="/Oceandrive _Synthwave.mp3" loop></audio>
+      <header id="main-header">
+        <h1>Hey, I'm Kaarle</h1>
+        <p>... and welcome to my stunning portfolio page/journey!</p>
+        For an immersive experience press play
+        <button id="play-btn"><i class="fas fa-play"></i></button>
+        <button id="pause-btn"><i class="fas fa-pause"></i></button>
+        <br />
+        Note: This page is best viewed on desktop with fullhd monitor.
+      </header>
+
+      <section>
+        <h2>Why this webpage?</h2>
+        <p>
+          The purpose of this page is to showcase my skills and knowledge in
+          software development, aiming to persuade you of the value I bring to
+          the table.
+        </p>
+        <p>
+          Feel free to explore the content through the buttons below or simply
+          scroll down to enjoy the engaging visuals. Personally, I recommend the
+          latter for the delightful visual experience.
+        </p>
+        <div id="link-div">
+          <button id="about-btn">Jump to About me</button>
+          <button id="projects-btn">Jump to Projects</button>
+          <button id="skills-btn">Jump to Skills</button>
+          <button id="work-experience-btn">Jump to Work experience</button>
+          <button id="contact-btn">Jump to Contact</button>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>About me</h2>
+        <p>
+          So who am I? I'm a 22-year-old IT student hailing from Finland,
+          currently on my second year of Information Technology studies at the
+          University of Turku. Having wrapped up my Bachelor's thesis, I'm
+          expecting to get my Bachelor's degree in the summer of 2024.
+        </p>
+        <p>
+          My fascination with computers and technology dates back to my
+          childhood, and I've nurtured programming as a hobby for several years.
+          Both in my free time and throughout my academic journey, I've had the
+          opportunity to delve into a diverse array of technologies and
+          concepts. I have worked with languages such as JavaScript, TypeScript,
+          Python, Java, C, and C++, my expertise predominantly lies within the
+          JavaScript ecosystem, where I've honed my skills with TypeScript,
+          NodeJs, ReactJs, and NextJs. And I am aiming to expand my knowledge
+          further.
+        </p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <p>
+          I've successfully undertaken a couple of significant projects and am
+          actively engaged in a few more. In addition to these larger endeavors,
+          I've tackled several mini and learning projects as integral components
+          of my university studies, broadening my skill set along the way. All
+          my projects are crafted within the NodeJs environment, reflecting my
+          proficiency in this ecosystem.
+        </p>
+        <p>
+          Looking ahead, I'm eager to diversify my portfolio. I'm planning a
+          Java desktop project to showcase my object-oriented programming (OOP)
+          skills. Additionally, I'm considering delving into Python or Laravel
+          for upcoming projects to expand my expertise.
+        </p>
+        <p>
+          For those curious to explore my work, all my public repositories can
+          be found
+          <a href="https://github.com/KaarleJ?tab=repositories">here</a>. Feel
+          free to scroll down for more details on some of my significant
+          projects.
+        </p>
+      </section>
+
+      <section id="project">
+        <h2>Hops App</h2>
+        <p>
+          Hops App is a web application that helps users to plan their
+          university studies. The core functionality is a special calendar
+          consisting of 4 periods and 2 additional periods for summer studies.
+          The user can add courses to the calendar and the application will
+          automatically calculate the credits and the workload of that period.
+          Courses can also span multiple periods.
+        </p>
+        <p>
+          The application frontend is built with React, Material UI, and
+          TypeScript. Backend is built with TypeScript, NodeJs, ExpressJs,
+          Apollo GraphQL, and MongoDB. I also used jest and cypress for unit and
+          E2E tests. The app is deployed on fly.io
+          <a href="https://hopsapp.fly.dev/">here</a>.
+        </p>
+        <p>
+          This was the first fullstack project I've done and it was a great
+          learning experience. It was done as part of the Fullstack Open 2022
+          studies. The greatest challenge was all the new CSS properties I got
+          to work with and flex in particular. But it taught me so much. I've
+          improved a lot since then and I'm planning to refactor the project in
+          the future.
+        </p>
+
+        <p>
+          Github URL:
+          <a href="https://github.com/KaarleJ/hops-app-frontend">frontend</a>
+          <a href="https://github.com/KaarleJ/hops-app-backend">backend</a>
+        </p>
+      </section>
+
+      <section id="project">
+        <h2>SimplyFood</h2>
+        <p>
+          SimplyFood is a recipe website that allows users to create, like,
+          search and comment on recipes. This was my second fullstack project
+          and it was done as an independent learning project.
+        </p>
+        <p>
+          The application is developed with NextJs which means that the frontend
+          and backend are in the same project. The frontend is built with React,
+          NextJs, and Tailwind CSS. The backend is built with TypeScript,
+          NextJs, Prisma, and PostgreSQL. I only have unit tests for the backend
+          because of some issues with NextJs, but am planning to add E2E tests
+          in the future. I have a simple CI/CD pipeline with Github Actions and
+          Vercel's own checks to preview and deploy the app. I have different
+          neon.tech Postgres databases for production and development and
+          testing. I also use AWS S3 for storing images.
+          <a href="https://simplyfood-git-main-kaarlej.vercel.app/">here</a>.
+        </p>
+        <p>
+          I learnt a lot during this project. I got my first touch with SSR and
+          SEO when developing this app. It's still a bit WIP and I'm planning to
+          add more features to it. The greatest challenge was that I had quite a
+          long break from this project due to studies and other projects. But it
+          was a great learning experience.
+        </p>
+        <p>
+          Github URL:
+          <a href="https://github.com/KaarleJ/simplyfood">here</a>
+        </p>
+      </section>
+
+      <section id="project">
+        <h2>Project 3</h2>
+        <p>
+          This project is still in the brainstorming phase. But I'm most likely
+          going to do a Java desktop project to showcase my OOP skills. One idea
+          is a simple chess game. I'm considering JavaFx for the GUI and maybe
+          some low level sockets and object serialization for the multiplayer.
+        </p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <p>
+          In the dynamic realm of IT, I recognize that programming languages
+          represent just a fraction of the skillset. What truly matters is a
+          robust grasp of fundamentals and the ability to swiftly adapt to new
+          challenges. I harbor a genuine enthusiasm for continuous learning and
+          possess the courage to venture into uncharted territories.
+        </p>
+        <p>
+          Here are some of the technologies and concepts I've worked with during
+          my studies and freetime: JavaScript, TypeScript, NodeJs, ReactJs,
+          NextJs, Python, Java, C, C++, HTML, CSS, SQL, MongoDB, PostgreSQL,
+          SQLite, GraphQL, Apollo, Prisma, Git, Docker, AWS, CI/CD, Jest,
+          Cypress, OOP, Agile, Scrum, Computer Architecture, Sockets and more.
+        </p>
+      </section>
+
+      <section id="work-experience">
+        <h2>Previous experiences</h2>
+        <p>
+          In case you're wondering, what a young lad like me has been up to
+          these last years.
+        </p>
+        <p>Here is a list of my previous experiences:</p>
+        <ul>
+          <li>Warehouse worker: part-time, (11/2022--ongoing)</li>
+          <li>Production worker: full-time, (2/2022--8/2022)</li>
+          <li>Conscription Service: 24/7, (1/2021--12/2021)</li>
+          <li>Cashier: part-time, (5/2020--12/2020)</li>
+          <li>
+            City IT administration Summer Employee: full-time, (5/2019-6/2019)
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          If youre thinking that's a good guy and he's exactly what we need.
+          Feel free to contact me on these channels.
+        </p>
+        <ul>
+          <li>Email: kaarle.jarvinen@gmail.com</li>
+          <li>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/kaarlej/"
+              >https://www.linkedin.com/in/kaarlej/</a
+            >
+          </li>
+          <li>
+            Github:
+            <a href="https://github.com/KaarleJ">https://github.com/KaarleJ</a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Attributions</h2>
+        <p>This website includes 3D models licensed under Creative Commons.</p>
+
+        Death Star: This work is based on "crappy Death Star"
+        (https://sketchfab.com/3d-models/crappy-death-star-c029889c6adb4679a163e7fe174edd81)
+        by Admiral_Forever (https://sketchfab.com/Admiral_Forever) licensed
+        under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+        <br />
+        Lost Programmer: This work is based on "Lost Programmer"
+        (https://sketchfab.com/3d-models/lost-programmer-43d32e4f459f4857a054579da61bb3d6)
+        by rivaiamin (https://sketchfab.com/rivaiamin) licensed under
+        CC-BY-ND-4.0 (http://creativecommons.org/licenses/by-nd/4.0/)
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/eventControl.ts"></script>
+  </body>
+</html>
