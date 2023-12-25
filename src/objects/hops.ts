@@ -1,9 +1,9 @@
 import * as THREE from "three";
 import scene from "../scene";
 
-const nodeTexture = new THREE.TextureLoader().load("../resources/node.png");
-const reactTexture = new THREE.TextureLoader().load("../resources/react.png");
-const tsTexture = new THREE.TextureLoader().load("../resources/typescript.png");
+const nodeTexture = new THREE.TextureLoader().load("/node.png");
+const reactTexture = new THREE.TextureLoader().load("/react.png");
+const tsTexture = new THREE.TextureLoader().load("/typescript.png");
 
 nodeTexture.colorSpace = THREE.SRGBColorSpace;
 reactTexture.colorSpace = THREE.SRGBColorSpace;

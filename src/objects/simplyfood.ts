@@ -1,11 +1,9 @@
 import * as THREE from "three";
 import scene from "../scene";
 
-const nextTexture = new THREE.TextureLoader().load("../resources/next.png");
-const prismaTexture = new THREE.TextureLoader().load("../resources/prisma.png");
-const tailwindTexture = new THREE.TextureLoader().load(
-  "../resources/tailwind.png"
-);
+const nextTexture = new THREE.TextureLoader().load("/next.png");
+const prismaTexture = new THREE.TextureLoader().load("/prisma.png");
+const tailwindTexture = new THREE.TextureLoader().load("/tailwind.png");
 
 nextTexture.colorSpace = THREE.SRGBColorSpace;
 prismaTexture.colorSpace = THREE.SRGBColorSpace;

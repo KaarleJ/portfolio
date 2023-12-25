@@ -1,10 +1,8 @@
 import * as THREE from "three";
 import scene from "../scene";
 
-const planetTexture = new THREE.TextureLoader().load("../resources/planet.png");
-const planetNormal = new THREE.TextureLoader().load(
-  "../resources/planet_normal.jpg"
-);
+const planetTexture = new THREE.TextureLoader().load("/planet.png");
+const planetNormal = new THREE.TextureLoader().load("/planet_normal.jpg");
 planetTexture.colorSpace = THREE.SRGBColorSpace;
 
 const planet = new THREE.Mesh(
@@ -18,10 +16,8 @@ const planet = new THREE.Mesh(
 planet.position.set(86, 0, -5);
 scene.add(planet);
 
-const moonTexture = new THREE.TextureLoader().load("../resources/moon.jpg");
-const moonNormal = new THREE.TextureLoader().load(
-  "../resources/moon_normal.jpg"
-);
+const moonTexture = new THREE.TextureLoader().load("/moon.jpg");
+const moonNormal = new THREE.TextureLoader().load("/moon_normal.jpg");
 moonTexture.colorSpace = THREE.SRGBColorSpace;
 
 const moon = new THREE.Mesh(

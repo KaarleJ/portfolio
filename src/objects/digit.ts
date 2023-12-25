@@ -6,7 +6,7 @@ const loader = new GLTFLoader();
 
 let digit: THREE.Group;
 
-loader.load("./resources/digit/scene.gltf", (gltf) => {
+loader.load("/digit/scene.gltf", (gltf) => {
   digit = gltf.scene;
   digit.add(new THREE.PointLight(0xffffff, 1));
   digit.position.set(-20, 0, 0);

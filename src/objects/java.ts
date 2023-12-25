@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import scene from "../scene";
 
-const javaTexture = new THREE.TextureLoader().load("../resources/java.png");
+const javaTexture = new THREE.TextureLoader().load("/java.png");
 
 javaTexture.colorSpace = THREE.SRGBColorSpace;
 

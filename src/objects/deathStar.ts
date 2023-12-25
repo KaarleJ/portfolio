@@ -6,7 +6,7 @@ const loader = new GLTFLoader();
 
 let deathStar: THREE.Group;
 
-loader.load("./resources/deathstar/scene.gltf", (gltf) => {
+loader.load("/deathstar/scene.gltf", (gltf) => {
   deathStar = gltf.scene;
   // We add a light to the star
   deathStar.scale.set(10, 10, 10);
