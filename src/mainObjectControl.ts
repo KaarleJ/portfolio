@@ -1,7 +1,7 @@
 import { camera } from "./main";
 import { kaarleControl } from "./objects/kaarle";
 import { meteorControl } from "./meteorControl";
-import "./objects/planet";
+import { planetControl } from "./objects/planet";
 import { digitMove, digitControl } from "./objects/digit";
 import { deathStarMove } from "./objects/deathStar";
 import { hopsControl } from "./objects/hops";
@@ -14,6 +14,7 @@ export function mainObjectControl() {
   digitControl();
   hopsControl();
   simplyfoodControl();
+  planetControl();
   javaControl();
 }
 
