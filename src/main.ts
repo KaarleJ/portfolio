@@ -1,19 +1,11 @@
-import "./style.css";
 import * as THREE from "three";
-import { kaarleControl } from "./objects/kaarle";
-import { meteorControl } from "./meteorControl";
-import { planetControl } from "./objects/planet";
-import { digitMove, digitControl } from "./objects/digit";
-import { deathStarMove } from "./objects/deathStar";
-import { hopsControl } from "./objects/hops";
-import { simplyfoodControl, simplyfoodMove } from "./objects/simplyfood";
-import { javaControl } from "./objects/java";
+import { mainObjectControl, mainObjectMove } from "./mainObjectControl";
 
 // We import the instantiated scene from another file
 import scene from "./scene";
 
 // Instantiate the camera
-const camera = new THREE.PerspectiveCamera(
+export const camera = new THREE.PerspectiveCamera(
   75,
   window.innerWidth / window.innerHeight,
   0.1,
@@ -36,14 +28,8 @@ renderer.render(scene, camera);
 function animate() {
   requestAnimationFrame(animate);
 
-  // We call the control functions for the objects
-  meteorControl(camera.position.x, camera.position.y, camera.position.z);
-  kaarleControl();
-  planetControl();
-  digitControl();
-  hopsControl();
-  simplyfoodControl();
-  javaControl();
+  // We call the mainObjectControl function to move the objects
+  mainObjectControl();
 
   renderer.render(scene, camera);
 }
@@ -54,9 +40,7 @@ function moveCamera() {
   const move = document.body.getBoundingClientRect().top;
   camera.position.x = move * -0.04;
 
-  digitMove(move);
-  deathStarMove(move);
-  simplyfoodMove(move);
+  mainObjectMove(move);
 }
 
 animate();
