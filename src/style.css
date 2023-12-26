@@ -141,3 +141,33 @@ button:hover {
     font-size: 30px;
   }
 }
+
+@media (max-width: 1920px) {
+  p,
+  ul {
+    font-size: 22px;
+  }
+
+  h1 {
+    font-size: 46px;
+  }
+
+  h2 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 2560px) {
+  p,
+  ul {
+    font-size: 22px;
+  }
+
+  h1 {
+    font-size: 52px;
+  }
+
+  h2 {
+    font-size: 44px;
+  }
+}
