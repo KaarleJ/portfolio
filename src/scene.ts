@@ -43,8 +43,8 @@ scene.background.repeat.x = offsetRepeatX;
 scene.background.offset.y = offsetY;
 scene.background.repeat.y = offsetRepeatY;
 
-// Add ambient light to the scene
-const ambientLight = new THREE.AmbientLight(0xffffff);
-scene.add(ambientLight);
+const light = new THREE.DirectionalLight(0xffffff, 1);
+light.position.set(-200, 0, -20);
+scene.add(light);
 
 export default scene;

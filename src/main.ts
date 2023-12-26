@@ -19,7 +19,6 @@ const renderer = new THREE.WebGLRenderer({
   canvas: document.querySelector("#bg") as HTMLCanvasElement,
   antialias: true,
 });
-console.log(window.devicePixelRatio);
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
 
@@ -47,12 +46,6 @@ function moveCamera() {
     move = document.body.getBoundingClientRect().top * 1.1;
   }
   camera.position.x = move * -0.04;
-  console.log(
-    "camera(x,y,z): ",
-    camera.position.x,
-    camera.position.y,
-    camera.position.z
-  );
 
   mainObjectMove(move);
 }
