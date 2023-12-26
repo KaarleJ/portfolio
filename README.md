@@ -1,6 +1,6 @@
 # Portfolio page
 
-This application is my own personal portfolio apge where I will showcase my IT skills and projects.
+This application is my own personal portfolio page where I will showcase my IT skills and projects.
 
 ## Development
 
@@ -8,7 +8,7 @@ This application was developed with Typescript and ViteJS. For styling I used pl
 
 ## Deployment
 
-This application will be deployed to Vercel.
+This application is deployed on vercel [here](https://www.kaarlej.com/)
 
 ## Reproduce
 
