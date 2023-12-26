@@ -11,7 +11,3 @@ loader.load("/earth/scene.gltf", (gltf) => {
   earth.position.set(84, 0, 0);
   scene.add(earth);
 });
-
-export function planetControl() {
-  earth.rotation.y += 0.002;
-}
