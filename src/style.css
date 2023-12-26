@@ -7,7 +7,7 @@
   --spacing: 1500px;
 
   font-family: "Audiowide Regular", monospace;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 canvas {
@@ -26,8 +26,9 @@ main {
   grid-template-columns: repeat(12, 1fr);
 }
 
-p {
-  font-size: 24px;
+p,
+ul {
+  font-size: 20px;
 }
 
 h1 {
@@ -55,10 +56,6 @@ section {
   margin-bottom: var(--spacing);
   border-radius: 5px;
   box-shadow: 5px 5px 5px #4078c0, 5px 5px 5px #4078c0 inset;
-}
-
-ul {
-  font-size: 24px;
 }
 
 #link-div {

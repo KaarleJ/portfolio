@@ -3,7 +3,7 @@ import * as THREE from "three";
 import { kaarleControl } from "./objects/kaarle";
 import { meteorControl } from "./meteorControl";
 import { planetControl } from "./objects/planet";
-import { digitMove } from "./objects/digit";
+import { digitMove, digitControl } from "./objects/digit";
 import { deathStarMove } from "./objects/deathStar";
 import { hopsControl } from "./objects/hops";
 import { simplyfoodControl, simplyfoodMove } from "./objects/simplyfood";
@@ -11,7 +11,6 @@ import { javaControl } from "./objects/java";
 
 // We import the instantiated scene from another file
 import scene from "./scene";
-import { digitControl } from "./objects/digit";
 
 // Instantiate the camera
 const camera = new THREE.PerspectiveCamera(
@@ -54,6 +53,7 @@ document.body.onscroll = moveCamera;
 function moveCamera() {
   const move = document.body.getBoundingClientRect().top;
   camera.position.x = move * -0.04;
+
   digitMove(move);
   deathStarMove(move);
   simplyfoodMove(move);
