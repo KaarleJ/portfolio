@@ -92,11 +92,6 @@ button:hover {
   grid-column: 7 / 12;
 }
 
-audio {
-  color: #02011a;
-  grid-column: 11/12;
-}
-
 #play-btn,
 #pause-btn {
   padding: 5px;
@@ -108,4 +103,41 @@ audio {
 
 #pause-btn {
   display: none;
+}
+
+@media (max-width: 800px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header {
+    margin-top: 150px;
+  }
+
+  button {
+    min-width: 90%;
+  }
+
+  header,
+  section {
+    max-width: 90vw;
+    word-break: break-word;
+    margin-right: 10px;
+  }
+
+  p,
+  ul {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
 }
