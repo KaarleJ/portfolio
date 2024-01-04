@@ -7,6 +7,8 @@ import { deathStarMove } from "./objects/deathStar";
 import { hopsControl } from "./objects/hops";
 import { simplyfoodControl, simplyfoodMove } from "./objects/simplyfood";
 import { javaControl } from "./objects/java";
+import { toolBoxControl } from "./objects/toolBox";
+import { toolBoxMove } from "./objects/toolBox";
 
 export function mainObjectControl() {
   meteorControl(camera.position.x, camera.position.y, camera.position.z);
@@ -16,10 +18,13 @@ export function mainObjectControl() {
   simplyfoodControl();
   planetControl();
   javaControl();
+  toolBoxControl();
 }
 
 export function mainObjectMove(move: number) {
+  console.log("camera(x,y): " + camera.position.x + "," + camera.position.y);
   digitMove(move);
   deathStarMove(move);
   simplyfoodMove(move);
+  toolBoxMove(move);
 }

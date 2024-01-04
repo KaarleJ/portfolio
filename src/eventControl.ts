@@ -66,7 +66,7 @@ const pauseButton = document.getElementById("pause-btn") as HTMLButtonElement;
 
 playButton.addEventListener("click", function () {
   if (audio) {
-    audio.volume = 0.1;
+    audio.volume = 0.05;
     audio.play();
     playButton.style.display = "none";
     pauseButton.style.display = "inline-block";
