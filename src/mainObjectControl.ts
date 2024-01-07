@@ -22,7 +22,6 @@ export function mainObjectControl() {
 }
 
 export function mainObjectMove(move: number) {
-  console.log("camera(x,y): " + camera.position.x + "," + camera.position.y);
   digitMove(move);
   deathStarMove(move);
   simplyfoodMove(move);
