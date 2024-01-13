@@ -113,6 +113,17 @@ button:hover {
     justify-content: center;
   }
 
+  #bg {
+    display: none;
+  }
+
+  body {
+    background-image: url("space.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
   header {
     margin-top: 150px;
   }
