@@ -5,7 +5,8 @@
 
 html, body {
   width: 100%;
-  height: 100lvb;
+  height: 100vh;
+  height: 100svh;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
