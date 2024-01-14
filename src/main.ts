@@ -25,18 +25,25 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 // Render the scene
 renderer.render(scene, camera);
 
+// This function checks if the user is on a mobile device
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
 // This function will be called on every frame
 function animate() {
   requestAnimationFrame(animate);
 
-  // We call the mainObjectControl function to move the objects
-  mainObjectControl();
+  // We call the mainObjectControl function to move the objects if not on mobile
+  if (!isMobile()) {
+    mainObjectControl();
+  }
 
   renderer.render(scene, camera);
 }
 
 // We add an event listener for scrolling and move the camera accordingly
-document.body.onscroll = moveCamera;
+document.body.onscroll = isMobile() ? null : moveCamera;
 function moveCamera() {
   let move = document.body.getBoundingClientRect().top;
   if (window.innerWidth > 1920) {
