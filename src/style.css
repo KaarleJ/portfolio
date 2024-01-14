@@ -125,7 +125,7 @@ button:hover {
     display: none;
   }
 
-  body {
+  html {
     background-image: url("/space.jpg");
     background-size: cover;
     background-position: center;
