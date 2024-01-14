@@ -5,7 +5,7 @@
 
 html, body {
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -125,9 +125,10 @@ button:hover {
     display: none;
   }
 
-  html {
+  body {
     background-image: url("/space.jpg");
     background-size: cover;
+    background-position: top;
     background-attachment: fixed;
   }
 
@@ -188,4 +189,8 @@ button:hover {
   h2 {
     font-size: 44px;
   }
+}
+
+.Mobile-bar.Mobile-bar--bottom {
+  display: none;
 }
