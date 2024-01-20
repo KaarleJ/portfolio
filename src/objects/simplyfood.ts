@@ -47,7 +47,7 @@ export function simplyfoodControl() {
 }
 
 export function simplyfoodMove(move: number) {
-  next.position.x = -115 + move * -0.05;
-  prisma.position.x = -113 + move * -0.05;
-  tailwind.position.x = -111 + move * -0.05;
+  next.position.x = -118 + move * -0.05;
+  prisma.position.x = -116 + move * -0.05;
+  tailwind.position.x = -114 + move * -0.05;
 }
