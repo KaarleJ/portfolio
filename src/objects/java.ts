@@ -10,7 +10,7 @@ const java = new THREE.Mesh(
   new THREE.MeshBasicMaterial({ map: javaTexture })
 );
 
-java.position.set(535, 0, -3);
+java.position.set(538, 0, -3);
 
 scene.add(java);
 

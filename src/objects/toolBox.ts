@@ -24,6 +24,6 @@ export function toolBoxControl() {
 
 export function toolBoxMove(move: number) {
   if (toolBox) {
-    toolBox.position.x = -150 + move * -0.05;
+    toolBox.position.x = -153 + move * -0.05;
   }
 }
