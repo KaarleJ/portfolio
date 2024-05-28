@@ -10,20 +10,3 @@ This application was developed with Typescript and ViteJS. For styling I used pl
 
 This application is deployed on vercel [here](https://www.kaarlej.com/)
 
-## Reproduce
-
-To reproduce this app:
-
-- git clone https://github.com/KaarleJ/portfolio
-
-- npm i
-
-...in dev mode:
-
-- npm run dev
-
-...in prod mode:
-
-- npm run build
-
-- npm run preview
