@@ -1,6 +1,6 @@
 # Portfolio page
 
-This application is my own personal portfolio page where I will showcase my IT skills and projects.
+This application is my old personal portfolio page where showcase my IT skills and projects.
 
 ## Development
 
