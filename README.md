@@ -8,5 +8,5 @@ This application was developed with Typescript and ViteJS. For styling I used pl
 
 ## Deployment
 
-This application is deployed on vercel [here](https://www.kaarlej.com/)
+This application is deployed on vercel [here](https://www.kaarlej.com/](https://portfolio-livid-six-19.vercel.app/)
 
